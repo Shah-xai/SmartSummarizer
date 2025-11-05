@@ -1,0 +1,156 @@
+[2025-11-04 15:56:43,973: INFO: main: stage Data Ingestion stage initiated]
+[2025-11-04 15:56:43,977: INFO: common: yaml file: config.yaml loaded successfully]
+[2025-11-04 15:56:43,994: ERROR: main: [Errno 2] No such file or directory: 'param.yaml']
+Traceback (most recent call last):
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\pipeline\data_ingestion_pipeline.py", line 8, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\config\configuration.py", line 9, in __init__
+    self.param=read_yaml(param_path)
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\utils\common.py", line 33, in read_yaml
+    raise e
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\utils\common.py", line 26, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'param.yaml'
+[2025-11-04 15:57:31,147: INFO: main: stage Data Ingestion stage initiated]
+[2025-11-04 15:57:31,149: INFO: common: yaml file: config.yaml loaded successfully]
+[2025-11-04 15:57:31,149: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-04 15:57:31,237: ERROR: main: "'ConfigBox' object has no attribute 'artifcts_dir'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifcts_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifcts_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifcts_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\pipeline\data_ingestion_pipeline.py", line 8, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\config\configuration.py", line 10, in __init__
+    create_directories([self.config.artifcts_dir])
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifcts_dir'"
+[2025-11-04 15:58:01,253: INFO: main: stage Data Ingestion stage initiated]
+[2025-11-04 15:58:12,557: INFO: common: yaml file: config.yaml loaded successfully]
+[2025-11-04 15:58:12,559: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-04 15:58:14,268: ERROR: main: "'ConfigBox' object has no attribute 'artifcts_dir'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifcts_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifcts_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifcts_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifcts_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\pipeline\data_ingestion_pipeline.py", line 8, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\config\configuration.py", line 10, in __init__
+    create_directories([self.config.artifcts_dir])
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifcts_dir'"
+[2025-11-04 15:59:14,641: INFO: main: stage Data Ingestion stage initiated]
+[2025-11-04 15:59:21,849: INFO: common: yaml file: config.yaml loaded successfully]
+[2025-11-04 15:59:21,851: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-04 15:59:21,853: INFO: common: created directory at: artifacts]
+[2025-11-04 15:59:23,018: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-04 15:59:24,783: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'root_dir']
+Traceback (most recent call last):
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\pipeline\data_ingestion_pipeline.py", line 9, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "E:\SFU files\Machine_learning_specialization\Portfolio_projects\NLP_project\src\config\configuration.py", line 14, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'root_dir'
+[2025-11-04 16:04:14,279: INFO: main: stage Data Ingestion stage initiated]
+[2025-11-04 16:04:14,281: INFO: common: yaml file: config.yaml loaded successfully]
+[2025-11-04 16:04:14,281: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-11-04 16:04:14,281: INFO: common: created directory at: artifacts]
+[2025-11-04 16:04:14,281: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-11-04 16:04:14,281: INFO: data_ingestion:  Downloading data into artifacts/data_ingestion/Samsung-samsum...]
+[2025-11-04 16:04:22,438: INFO: main: Stage Data Ingestion stage Completed]

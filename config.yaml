@@ -1,0 +1,5 @@
+artifacts_dir: artifacts
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_url: "koushik7198/Samsung-samsum_processed"
+  local_data_file: "artifacts/data_ingestion/Samsung-samsum" 
