@@ -1,7 +1,6 @@
 from src.entity import DataIngestionConfig,DataTransformationConfig
-import os
 from src.utils.common import read_yaml, create_directories
-from src.constants import *
+from src.constants import CONFIG_FILE_PATH, PARAM_FILE_PATH
 
 class ConfigurationManager():
     def __init__(self, config_path=CONFIG_FILE_PATH, param_path=PARAM_FILE_PATH):
