@@ -25,6 +25,7 @@ list_of_files=[
     "main.py",
     "setup.py",
     "Dockerfile",
+    "tests/test_workflow.py",
     "Research/Research.ipynb"
 ]
 
