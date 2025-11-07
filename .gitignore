@@ -1,5 +1,6 @@
 venv/
-artifacts/
+artifacts/data_ingestion
+artifacts/model
 logs/
 textsummarizer
 Lessons_learned.docx
