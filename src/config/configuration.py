@@ -1,4 +1,4 @@
-from src.entity import DataIngestionConfig,DataTransformationConfig
+from src.entity import DataIngestionConfig,DataTransformationConfig,ModelTrainingConfig
 from src.utils.common import read_yaml, create_directories
 from src.constants import CONFIG_FILE_PATH, PARAM_FILE_PATH
 
@@ -26,5 +26,17 @@ class ConfigurationManager():
             tokenizer_name=config.tokenizer_name
         )
         return data_transformation_config
+    
+    def get_model_training_config(self)->ModelTrainingConfig:
+        config=self.config.model_training
+        create_directories([config.root_dir])
+        model_training_config=ModelTrainingConfig(
+            root_dir=config.root_dir,
+            data_dir=config.data_dir,
+            model_name=config.model_name,
+            training_params=dict(self.param.TrainingArguments)
+        )
+        return model_training_config
+    
     
     

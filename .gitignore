@@ -1,4 +1,6 @@
 venv/
+artifacts/
+logs/
 textsummarizer
 Lessons_learned.docx
 

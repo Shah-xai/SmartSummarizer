@@ -7,3 +7,7 @@ data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts\data_ingestion\Samsung-samsum
   tokenizer_name: "google/pegasus-cnn_dailymail"
+model_training:
+  root_dir: artifacts\model
+  data_dir: artifacts\data_transformation\Samsung-samsum-transformed
+  model_name: "google/pegasus-cnn_dailymail"

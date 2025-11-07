@@ -12,5 +12,15 @@ class DataTransformationConfig:
     data_path: Path
     tokenizer_name: str
 
+@dataclass
+class ModelTrainingConfig:
+  root_dir: Path
+  data_dir: Path
+  model_name: str
+  training_params: dict
+  
+
+
+
 
     
