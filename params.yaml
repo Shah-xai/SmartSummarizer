@@ -8,3 +8,4 @@ TrainingArguments:
   eval_strategy: steps
   eval_steps: 100
   save_steps: 500
+  fp16: True
