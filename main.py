@@ -25,4 +25,13 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-    
+STAGE_NAME="Model training stage"
+
+try:
+    logger.info(f"stage {STAGE_NAME} initiated")
+     model_training_pipeline=ModelTrainingPipeline()
+    model_training_pipeline.initiate_training()
+    logger.info(f"Stage {STAGE_NAME} Completed")
+except Exception as e:
+    logger.exception(e)
+    raise e

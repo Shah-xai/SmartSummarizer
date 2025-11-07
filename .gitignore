@@ -1,5 +1,4 @@
 venv/
-artifacts/data_ingestion
 artifacts/model
 logs/
 textsummarizer
