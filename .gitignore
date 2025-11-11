@@ -1,7 +1,8 @@
 venv/
-artifacts/model
+artifacts/
 logs/
 textsummarizer
+mlruns/
 Lessons_learned.docx
 
 
