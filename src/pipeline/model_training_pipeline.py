@@ -1,6 +1,6 @@
 #Activate for pipeline test, only
-import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+# import sys, os
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 from src.config.configuration import ConfigurationManager
 from src.components.model_training import ModelTraining
