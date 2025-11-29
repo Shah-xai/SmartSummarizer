@@ -18,6 +18,13 @@ class ModelTrainingConfig:
   data_dir: Path
   model_name: str
   training_params: dict
+@dataclass
+class ModelEvaluationConfig:
+  root_dir: Path
+  model_dir: Path
+  tokenizer_dir: Path
+  data_path: Path
+  metric_file_name: str
   
 
 

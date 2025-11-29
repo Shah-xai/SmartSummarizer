@@ -11,3 +11,9 @@ model_training:
   root_dir: "s3://amzn-s3-llm-bucket/SmartSummarizer/model"
   data_dir: "artifacts/data_transformation/Samsung-samsum-transformed"
   model_name: "google/pegasus-cnn_dailymail"
+model_evaluation:
+  root_dir: "s3://amzn-s3-llm-bucket/SmartSummarizer/model"
+  model_dir: "s3://amzn-s3-llm-bucket/SmartSummarizer/model/pegasus-model"
+  tokenizer_dir: artifacts\model\tokenizer
+  data_path: artifacts\data_transformation\Samsung-samsum-transformed\test
+  metric_file_name: artifacts/model_evaluation/metric.csv
