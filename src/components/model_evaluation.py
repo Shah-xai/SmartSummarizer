@@ -54,9 +54,10 @@ class ModelEvaluation:
             with torch.no_grad():
                 summaries=model.generate(input_ids=input_["input_ids"].to(device), 
                                    attention_mask=input_["attention_mask"].to(device),
-                                   num_beams=8,
-                                   max_length=124,
-                                   length_penalty=0.8
+                                   num_beams=4,
+                                   max_length=128,
+                                   length_penalty=0.85,
+                                    no_repeat_ngram_size=3
 
                                    )
             
