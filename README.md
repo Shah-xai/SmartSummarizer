@@ -29,7 +29,7 @@ This project demonstrates the complete ML lifecycle:
 
 ```
 SmartSummarizer/
-├── api/
+├──
 │   ├── main.py
 │   └── routers/
 ├── src/
