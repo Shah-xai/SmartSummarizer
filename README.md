@@ -28,8 +28,7 @@ This project demonstrates the complete ML lifecycle:
 ## 📂 Project Structure
 
 ```
-SmartSummarizer/
-├──
+├──SmartSummarizer/
 │   ├── main.py
 │   └── routers/
 ├── src/
