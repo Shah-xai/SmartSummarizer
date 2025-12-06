@@ -1,11 +1,8 @@
-# SmartSummarizer — End-to-End LLM Summarization System (FastAPI + HuggingFace + AWS SageMaker)
+# SmartSummarizer — End-to-End Text Summarization (FastAPI + HuggingFace + AWS SageMaker)
 
-SmartSummarizer is a full-stack text-summarization system built with production-grade machine learning engineering principles.
-It combines **HuggingFace transformer models**, **AWS SageMaker training**, **S3 model storage**, and a **FastAPI web backend**
-to deliver reliable summarization services at scale.
-
-This project demonstrates the complete ML lifecycle:
-**data ingestion → preprocessing → model training → evaluation → deployment → API-based inference.**
+SmartSummarizer is a full-stack summarization project demonstrating a production-style pipeline:  
+**data ingestion → preprocessing → model training → evaluation → deployment → API-based inference.**  
+It’s meant as a **showcase / demo project** — the core code, configs, and API logic are included, but **pre-trained model artifacts are omitted**.  
 
 ##  Features
 
@@ -53,50 +50,33 @@ This project demonstrates the complete ML lifecycle:
 | **Containerization** | Docker |
 | **Dev Tools** | GitHub |
 
-##  Training Pipeline (AWS SageMaker)
-
-Includes:
-
-- Tokenization + preprocessing  
-- Transformer model fine-tuning  
-- Gradient clipping & warmup  
-- Early stopping  
-- Artifact saving to S3  
-- Optional real-time inference endpoint  
-
 ##  Evaluation
 
 - **ROUGE-1**
 - **ROUGE-2**
 - **ROUGE-L**
 
-## 🌐 FastAPI Web Application
+##  Demo Mode & Model Artifacts
 
-Start the API:
+- This repository does **not** include the large model weights (≈ 5 GB) to keep the repo lightweight.  
+- Instead, a **demo video** illustrates how the system works end-to-end (inference via FastAPI).  
 
-```bash
-python app.py
-```
+## 🎬 Demo Video
 
+[![Watch SmartSummarizer Demo](video_cover.jpg)](https://youtu.be/D-3VGY7jPXE)  
 
-## Deployment Options
+---
 
-### 1. Local
-- Run FastAPI 
-- Load model locally  
+## 👍 Quick Start — Run in Demo Mode (no model weights)
 
-### 2. Cloud
-- Dockerize  
-- Deploy to ECS / Fargate / EC2 / Lambda  
-- Use SageMaker endpoint for inference  
-
-## Roadmap
-
-- Long-context summarization  
-- RAG document summarization  
-- Batch summarization API  
-- Add frontend UI  
-- Add CloudWatch monitoring  
+1. Clone the repository
+2. Update config.yaml   
+3. Install dependencies:  
+   ```bash
+   pip install -r requirements.txt
+4. Run the main file
+    ```bash
+    python main.py
 
 ##  Author
 
